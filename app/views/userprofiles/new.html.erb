@@ -1,0 +1,18 @@
+<h1>New Article</h1>
+<%= form_with model: @profiles do |form| %>
+  <div>
+    <%= form.label :name %><br>
+    <%= form.text_field :name %>
+  </div>
+  <div>
+    <%= form.label :bio %><br>
+    <%= form.text_area :bio %>
+  </div>
+  <div>
+     <%= form.label :add_link) %><br>
+    <%= form.text_area :add_link %>
+  </div>
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
